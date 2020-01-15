@@ -14,11 +14,7 @@
 # for more details.
 # -------------------------------------------------------------------------
 
-if { [catch {package require dom 2.0}] } {
-    if { [catch {package require dom 1.6}] } {
-        error "require dom package greater than 1.6"
-    }
-}
+package require dom
 
 namespace eval SOAP::xpath {
     variable version 0.2
