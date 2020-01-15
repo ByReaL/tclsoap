@@ -18,6 +18,7 @@ FILES= \
 	SOAP.tcl		\
 	SOAP-CGI.tcl		\
 	SOAP-domain.tcl         \
+	SOAP-service.tcl        \
 	XMLRPC.tcl		\
 	rpcvar.tcl		\
 	utils.tcl		\
