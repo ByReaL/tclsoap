@@ -26,11 +26,7 @@
 
 package provide SOAP::Service 0.4
 
-if { [catch {package require dom 2.0}] } {
-    if { [catch {package require dom 1.6}] } {
-        error "require dom package greater than 1.6"
-    }
-}
+package require dom
 
 if { [catch {package require Trf}] } {
     if { [catch {package require base64}] } {

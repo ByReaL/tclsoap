@@ -22,10 +22,7 @@ package require rpcvar;                 # TclSOAP
 
 namespace eval ::SOAP {variable domVersion}
 if {[catch {package require SOAP::dom 1.0} ::SOAP::domVersion]} {
-    if { [catch {package require dom 2.0} ::SOAP::domVersion]} {
-        if { [catch {package require dom 1.6} ::SOAP::domVersion]} {
-            error "require dom package greater than 1.6"
-        }
+    if { [catch {package require dom} ::SOAP::domVersion]} {
         package require SOAP::xpath;    # TclSOAP
     }
     proc ::SOAP::createDocument {name} {
