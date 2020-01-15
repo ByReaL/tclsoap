@@ -1,12 +1,18 @@
-# Contributor: Mircea Dan Gheorghe <mirceadan@gmail.com>
 # Maintainer: Mircea Dan Gheorghe <mirceadan@gmail.com>
+# Contributor: Mircea Dan Gheorghe <mirceadan@gmail.com>
+
+
+# inspired from
+#https://wiki.archlinux.org/index.php/creating_packages
+#https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=tclxml
+#https://bbs.archlinux.org/viewtopic.php?id=243517
 
 pkgname=tclsoap
 pkgver=1.6.7
 pkgrel=1
-pkgdesc="The TclSOAP package provides a mechanism to bind Tcl command procedures to remote procedure calls using the Simple Object Access Protocol (SOAP) and XML-RPC over HTTP. Both client and server code is provided."
+pkgdesc="The package provides a mechanism to bind Tcl command procedures to remote procedure calls using the Simple Object Access Protocol (SOAP) and XML-RPC over HTTP. Both client and server code is provided."
 url="http://tclsoap.sourceforge.net"
-arch=('i686' 'x86_64')
+arch=('any')
 license=('MIT')
 depends=('tcl' 'tclxml')
 optdepends=(
@@ -27,5 +33,4 @@ package() {
   install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname/LICENSE
   install -d $pkgdir/usr/share/doc/$pkgname
   cp -r doc/* $pkgdir/usr/share/doc/$pkgname
-  rmdir $pkgdir/usr/bin
 }

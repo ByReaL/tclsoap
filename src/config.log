@@ -1,0 +1,6 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:582: checking for a BSD compatible install
+configure:636: checking executable extension based on host type
+configure:652: checking for tclsh
