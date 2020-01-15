@@ -8,7 +8,7 @@
 #https://bbs.archlinux.org/viewtopic.php?id=243517
 
 pkgname=tclsoap
-pkgver=1.6.7.2
+pkgver=1.6.7.1
 pkgrel=1
 pkgdesc="The package provides a mechanism to bind Tcl command procedures to remote procedure calls using the Simple Object Access Protocol (SOAP) and XML-RPC over HTTP. Both client and server code is provided."
 url="http://tclsoap.sourceforge.net"
@@ -20,7 +20,7 @@ optdepends=(
     'tcllib: technically not needed, but you want it if you want this package'
 )
 source=("https://github.com/ByReaL/tclsoap/archive/$pkgver.tar.gz")
-md5sums=('da222b00d11c6d229cb372e30e9a5058')
+md5sums=('9f0fbf71b095728ab932a39bf367b445')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
